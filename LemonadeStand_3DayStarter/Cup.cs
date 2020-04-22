@@ -9,10 +9,7 @@ namespace LemonadeStand_3DayStarter
     class Cup : Item
     {
         // member variables (HAS A)
-        int cup1 = 30;
-        int cup2 = 60;
-        int cup3 = 120;
-        int selectedCup;
+        public double total;
 
 
         // constructor (SPAWNER)
@@ -22,13 +19,29 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
-        public void Amount()
-        {
-            if (cup1 = cup1)
-            {
-                return cup1;
 
-            }
+        public Twenty(double price, int amount)
+        {
+            this.price = .013;
+            this.amount = 20;
+            total = price * amount;
+            return total;
+
+        }
+        public OneHundred(double price, int amount)
+        {
+            this.price = .016;
+            this.amount = 100;
+            total = price * amount;
+            return total;
+
+        }
+        public TwoHundred(double price, int amount)
+        {
+            this.price = .01;
+            this.amount = 200;
+            total = price * amount;
+            return total;
         }
     }
 }

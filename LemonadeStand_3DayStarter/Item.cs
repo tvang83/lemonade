@@ -10,20 +10,21 @@ namespace LemonadeStand_3DayStarter
     {
         // member variables (HAS A) - 
         public string name;
-        public int price;
+        public double price;
         public int amount;
 
         // constructor (SPAWNER)
-        public Item(string name, int price, int amount) //default variables for all shop items
+        public Item() //default variables for all shop items
         {
-            this.name = name;
-            this.price = price;
-            this.amount = amount;
+
 
         }
 
         // member methods (CAN DO)
+        public void AllItems()  //no usage, just a placeholder for now
+        {
 
+        }
 
     }
 }

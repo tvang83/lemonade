@@ -17,5 +17,28 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
+        public OneHundred(double price, int amount)
+        {
+            this.price = .014;
+            this.amount = 100;
+            total = price * amount;
+            return total;
+
+        }
+        public TwoHundred(double price, int amount)
+        {
+            this.price = .012;
+            this.amount = 200;
+            total = price * amount;
+            return total;
+
+        }
+        public FiveHundred(double price, int amount)
+        {
+            this.price = .01;
+            this.amount = 500;
+            total = price * amount;
+            return total;
+        }
     }
 }
