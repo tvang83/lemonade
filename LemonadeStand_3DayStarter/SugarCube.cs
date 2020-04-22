@@ -10,33 +10,43 @@ namespace LemonadeStand_3DayStarter
     {
         // member variables (HAS A)
 
+        public double oneHundred;
+        public double twoHundred;
+        public double fiveHundred;
+        public double total;
+
+
         // constructor (SPAWNER)
         public SugarCube()
         {
             name = "sugar cube";
+            oneHundred = OneHundred();
+            twoHundred = TwoHundred();
+            fiveHundred = FiveHundred();
+           
         }
 
         // member methods (CAN DO)
-        public OneHundred(double price, int amount)
+        public double OneHundred()
         {
-            this.price = .014;
-            this.amount = 100;
+            price = .014;
+            amount = 100;
             total = price * amount;
             return total;
 
         }
-        public TwoHundred(double price, int amount)
+        public double TwoHundred()
         {
-            this.price = .012;
-            this.amount = 200;
+            price = .012;
+            amount = 200;
             total = price * amount;
             return total;
 
         }
-        public FiveHundred(double price, int amount)
+        public double FiveHundred()
         {
-            this.price = .01;
-            this.amount = 500;
+            price = .01;
+            amount = 500;
             total = price * amount;
             return total;
         }

@@ -12,10 +12,14 @@ namespace LemonadeStand_3DayStarter
         public int temperature;
         public string condition;
         public List<Customer> customers;
+        public List<string> weatherCondition = new List<string> { "Hazy", "Cloudy", "Rainy", "Sunny", "Overcast"};
 
-        //constructor
-        public Weather()
+
+    //constructor
+    public Weather()
         {
+            condition = DailyCondition();
+            temperature = Temperature();
 
         }
 
@@ -28,12 +32,11 @@ namespace LemonadeStand_3DayStarter
             return temperature;
         }
 
-        public string Condition()
+        public string DailyCondition()  //random daily conditions 
         {
-            condition = new List<string> { "Hazy", "Cloudy", "Rainy", "Sunny", "Overcast"};
 
             Random rand = new Random();
-            string randCondition = rand.Next(condition.Count);
+            string randCondition = weatherCondition[rand.Next(weatherCondition.Count-1)];
             return randCondition;
 
         }

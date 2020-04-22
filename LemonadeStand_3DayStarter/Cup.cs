@@ -9,6 +9,9 @@ namespace LemonadeStand_3DayStarter
     class Cup : Item
     {
         // member variables (HAS A)
+        public double twenty;
+        public double oneHundred;
+        public double twoHundred;
         public double total;
 
 
@@ -16,30 +19,34 @@ namespace LemonadeStand_3DayStarter
         public Cup()
         {
             name = "cup";
+            twenty = Twenty();
+            oneHundred = OneHundred();
+            twoHundred = TwoHundred();
+
         }
 
         // member methods (CAN DO)
 
-        public Twenty(double price, int amount)
+        public double Twenty()
         {
-            this.price = .013;
-            this.amount = 20;
+            price = .013;
+            amount = 20;
             total = price * amount;
             return total;
 
         }
-        public OneHundred(double price, int amount)
+        public double OneHundred()
         {
-            this.price = .016;
-            this.amount = 100;
+            price = .016;
+            amount = 100;
             total = price * amount;
             return total;
 
         }
-        public TwoHundred(double price, int amount)
+        public double TwoHundred()
         {
-            this.price = .01;
-            this.amount = 200;
+            price = .01;
+            amount = 200;
             total = price * amount;
             return total;
         }
