@@ -8,6 +8,9 @@ namespace LemonadeStand_3DayStarter
 {
     static class UserInterface
     {
+        //member variables
+
+
         public static int GetNumberOfItems(string itemsToGet)
         {
             bool userInputIsAnInteger = false;

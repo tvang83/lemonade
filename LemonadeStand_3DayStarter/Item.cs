@@ -8,7 +8,7 @@ namespace LemonadeStand_3DayStarter
 {
     abstract class Item
     {
-        // member variables (HAS A) - 
+        // member variables (HAS A) - Main parent variables
         public string name;
         public double price;
         public int amount;
@@ -17,6 +17,7 @@ namespace LemonadeStand_3DayStarter
         public Item() //default variables for all shop items
         {
 
+            name = "";
 
         }
 

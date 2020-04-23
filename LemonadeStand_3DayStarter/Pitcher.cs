@@ -14,22 +14,19 @@ namespace LemonadeStand_3DayStarter
 
         //constructor 
 
-        //method
-
-        public CupsUsed() // Calculation for cups used for pitcher during runtime
+        public Pitcher() // Calculation for cups used for pitcher during runtime
         {
             cupsLeftInPitcher = Pour();
 
         }
-
-        public int Pour()
+        //method
+        public int Pour() // when customer purchases a cup
         {
          startingAmount = 12;
-        while (startingAmount > 0)
+        while (cupsLeftInPitcher > 0)
             {
-                int cupsInPitcher = startingAmount - 1;
+                cupsLeftInPitcher = startingAmount - 1;
                 return cupsLeftInPitcher;
-
             }
         }
 }

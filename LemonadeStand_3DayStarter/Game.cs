@@ -8,5 +8,7 @@ namespace LemonadeStand_3DayStarter
 {
     class Game
     {
+        //member variables 
+
     }
 }

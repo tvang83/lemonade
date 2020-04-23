@@ -11,7 +11,6 @@ namespace LemonadeStand_3DayStarter
         //member variables 
         public int temperature;
         public string condition;
-        public List<Customer> customers;
         public List<string> weatherCondition = new List<string> { "Hazy", "Cloudy", "Rainy", "Sunny", "Overcast"};
 
 

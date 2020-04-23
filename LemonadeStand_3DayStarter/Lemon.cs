@@ -21,7 +21,6 @@ namespace LemonadeStand_3DayStarter
             ten = Ten();
             twentyfive = TwentyFive();
             fifty = Fifty();
-
         }
 
         // member methods (CAN DO)
